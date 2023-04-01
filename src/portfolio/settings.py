@@ -43,9 +43,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # созданные приложения
+    "author.apps.AuthorConfig",
     "jobs.apps.JobsConfig",
     "blog.apps.BlogConfig",
-    "author.apps.AuthorConfig",
     # установленные приложения
     "ckeditor",
     "ckeditor_uploader",

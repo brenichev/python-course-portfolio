@@ -29,7 +29,7 @@ urlpatterns = [
     path("ckeditor/", include("ckeditor_uploader.urls")),
     path("", IndexJobsListView.as_view(), name="home"),
     path("jobs/", include("jobs.urls")),
-    path("authors/", include("author.urls")),
+    path("author/", include("author.urls")),
     path("blog/", include("blog.urls")),
 ]
 urlpatterns.extend(static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT))

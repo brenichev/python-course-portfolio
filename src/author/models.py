@@ -1,3 +1,6 @@
+"""
+Модели для приложения "Authors" (Авторы).
+"""
 from django.db import models
 from base.models import TimeStampMixin
 
@@ -32,13 +35,11 @@ class Author(TimeStampMixin):
     )
 
     github_link = models.URLField(
-        blank=True,
         verbose_name="GitHub",
         help_text="Ссылка на GitHub",
     )
 
     resume_link = models.URLField(
-        blank=True,
         verbose_name="Резюме",
         help_text="Ссылка на резюме",
     )
@@ -48,11 +49,4 @@ class Author(TimeStampMixin):
         verbose_name_plural = "Авторы"
 
     def __str__(self) -> str:
-        return f'Объект "Автор" (id={self.pk})'
-
-    def fullname(self) -> str:
-        """
-        Формирование строки "Имя Фамилия".
-        :return:
-        """
-        return self.first_name + " " + self.last_name
+        return f'Объект "автор" (id={self.pk})'

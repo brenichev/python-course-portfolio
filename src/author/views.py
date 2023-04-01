@@ -1,6 +1,7 @@
 from django.views.generic import ListView
 from django.views.generic import DetailView
 
+
 from author.models import Author
 
 
