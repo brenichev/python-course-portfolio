@@ -37,7 +37,7 @@ git clone https://github.com/mnv/python-course-portfolio.git
     ```shell
     docker compose up
     ```
-   When containers are up server starts at [http://0.0.0.0:8000](http://0.0.0.0:8000). You can open it in your browser.
+   When containers are up server starts at [http://0.0.0.0:8000](http://0.0.0.0:8000). (On windows it looks like [http://localhost:8000/](http://localhost:8000/)) You can open it in your browser.
 
 4. To run application correctly set up the database using commands:
     Connect to the application Docker-container:
@@ -46,7 +46,7 @@ git clone https://github.com/mnv/python-course-portfolio.git
     ```
    Apply migrations to create tables in the database:
     ```shell
-    ./manage.py migrate
+    python manage.py migrate
     ```
 
 ## Usage
